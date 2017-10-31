@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout 
+        android:id="@+id/layout_foot"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/footer_bg"
+	    android:gravity="center_vertical"
+	    android:layout_alignParentBottom="true">
+	
+	    <ImageView 
+	        android:id="@+id/main_btn_home"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/setting_push_set"
+	        android:clickable="true"
+	        android:paddingLeft="30dp"
+	        android:paddingRight="30dp"
+	        android:layout_centerHorizontal="true"/>
+	    
+	    <ImageView
+	        android:id="@+id/main_btn_handle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/setting_push_set"
+	        android:clickable="true"
+	        android:paddingLeft="30dp"
+	        android:paddingRight="30dp"
+	        android:layout_toLeftOf="@id/main_btn_home" />
+	    
+	    
+	    <ImageView 
+	        android:id="@+id/main_btn_query"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/setting_push_set"
+	        android:clickable="true"
+	        android:paddingLeft="30dp"
+	        android:paddingRight="30dp"
+	        android:layout_toRightOf="@id/main_btn_home"/>
+	</RelativeLayout>
+
+	<FrameLayout
+	    android:id="@+id/content"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true" >
+	</FrameLayout>
+
+</RelativeLayout>
